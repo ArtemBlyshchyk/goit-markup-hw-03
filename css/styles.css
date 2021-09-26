@@ -9,6 +9,26 @@
   --fourth-text-color: rgba(255, 255, 255, 0.6);
   --accent-color: #2196f3;
 }
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+}
+
 body {
   color: #757575;
   font-family: "Roboto", sans-serif;
@@ -24,16 +44,51 @@ body {
   list-style: none;
 }
 
-.container{
-  width: 1230px;
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .header-menu .header-link.link.current {
-  color: var(--accent-color)
-
+  color: var(--accent-color);
 }
 
 /* Классы для Хедера и Героя */
+
+.header {
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.header-navigation {
+  display: flex;
+  align-items: center;
+}
+.header-menu {
+  display: flex;
+  /* align-items: center; */
+}
+.header-contacts-list {
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+}
+.first-logo {
+  margin-right: 93px;
+}
+.header-item:not(:last-child) {
+  margin-right: 50px;
+}
+.header-contacts-item:not(:last-child) {
+  margin-right: 50px;
+}
 
 .header-logo {
   font-family: "Raleway", sans-serif;
@@ -79,6 +134,10 @@ body {
 
 .hero {
   background-color: black;
+  width: 100%;
+  max-width: 1600px;
+  margin: 0, auto;
+  padding: 200px 0 280px 0;
 }
 
 .hero-text {
@@ -89,15 +148,18 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--primery-title-color);
+  max-width: 696px;
+  margin: 0 auto;
+  margin-bottom: 30px;
 }
 
 .hero-btn:hover,
 .hero-btn:focus {
-  background-color: #188CE8;
+  background-color: #188ce8;
 }
 
 .hero-btn {
-  font-family:inherit;
+  font-family: inherit;
   font-weight: bold;
   font-size: 16px;
   line-height: 1.88;
@@ -108,9 +170,16 @@ body {
   color: var(--third-text-color);
   background: #2196f3;
   border: none;
+  margin: 0 auto;
+
 }
 
+
 /* Классы для секции Наши услуги  */
+
+.service {
+  padding: 94px 0;
+}
 
 .service-title {
   font-weight: bold;
@@ -125,6 +194,20 @@ body {
   line-height: 1.71;
   color: var(--primary-text-color);
 }
+.service-header {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  opacity: 0;
+}
+.service-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.service-item:not(:last-child) {
+  margin-right: 30px;
+}
 
 /* Классы для секции Чем мы занимаемся */
 
@@ -138,8 +221,8 @@ body {
 
 /* Кдассы для секции Наша команда */
 
-.team{
-  background-color: #F5F4FA;
+.team {
+  background-color: #f5f4fa;
 }
 
 .team-header {
@@ -215,8 +298,8 @@ body {
 /* Вторая страничка - ПОРТФОЛИО */
 
 .portfolio-btn:hover,
-.portfolio-btn:focus{
-  color:var(--third-text-color);
+.portfolio-btn:focus {
+  color: var(--third-text-color);
   background-color: var(--accent-color);
 }
 .portfolio-btn {
