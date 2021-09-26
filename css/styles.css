@@ -24,6 +24,10 @@ body {
   list-style: none;
 }
 
+.container{
+  width: 1230px;
+}
+
 .header-menu .header-link.link.current {
   color: var(--accent-color)
 
