@@ -60,6 +60,7 @@ body {
 .header {
   padding-top: 24px;
   padding-bottom: 25px;
+  border-bottom: 1px solid #ECECEC;
 }
 
 .header-container {
@@ -172,6 +173,7 @@ body {
   border: none;
   margin: 0 auto;
   padding: 10px 32px;
+  border-radius: 4px;
 }
 
 /* Классы для секции Наши услуги  */
@@ -186,6 +188,7 @@ body {
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--secondary-title-color);
+  margin: 0 0 10px 0;
 }
 .service-text {
   font-weight: normal;
@@ -193,12 +196,7 @@ body {
   line-height: 1.71;
   color: var(--primary-text-color);
 }
-.service-header {
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  opacity: 0;
-}
+
 .service-list {
   display: flex;
   justify-content: space-between;
@@ -342,7 +340,7 @@ body {
 
 /* Вторая страничка - ПОРТФОЛИО */
 
-.service-title {
+.service-header {
   width: 1px;
   height: 1px;
   overflow: hidden;
@@ -364,8 +362,10 @@ body {
   justify-content: center;
   margin: 0 0 50px 0;
 }
+
 .portfolio-item:not(:last-child) {
   margin-right: 8px;
+
 }
 .portfolio-btn {
   font-family: inherit;
@@ -400,6 +400,7 @@ body {
   height: 404px;
   margin-right: 30px;
   margin-bottom: 30px;
+  border: 1px solid #EEEEEE;
 }
 
 .portfolio-item-img:nth-child(3n) {
